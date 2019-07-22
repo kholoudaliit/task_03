@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>List</title>
-    </head>
-    <body>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>List</title>
+		</head>
+		<body>
+			{% for object in my_list %}
+			<ul> 
+				<li> 
+					<h1>{{object.restaurant_name}}</h1>
+					<p> {{object.food_type}} </p>
+				</li>
+				
 
-    </body>
-</html>
+			</ul>
+			{% endfor %}
+		</body>
+	</html>
